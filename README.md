@@ -19,8 +19,7 @@ Once you have done that paste it in the cmd window, like this:
 Press `Enter` and wait for the script to execute! Once its done you can close the cmd window.
 
 ### Available Settings
-- If you wish to change the archive path from `Project Directory` to your `Desktop`, you can comment out line 20 and uncomment line 23,  
-just like this:
+- If you wish to change the archive path from `Project Directory` to your `Desktop`, you can comment out line 20 and uncomment line 23, just like this:
 ```bat
 REM Set Destination Path to Source Directory
 REM set destpath=%sourcedir%
@@ -28,8 +27,7 @@ REM set destpath=%sourcedir%
 REM Set Destination Path to Desktop
 set destpath=%USERPROFILE%\Desktop
 ```
-- If you wish to use `7-Zip` instead of the `built-in Windows archiving tool`, you need to commend line 49 and uncomment line 52,  
-just like this:
+- If you wish to use `7-Zip` instead of the `built-in Windows archiving tool`, you need to commend line 49 and uncomment line 52, just like this:
 ```bat
 REM Create zip Archive at Specified Path (Integrated Windows ZipFile)
 REM powershell -command "Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::CreateFromDirectory('%tempdir_copy%', '%destpath%\%archivename%.zip', [System.IO.Compression.CompressionLevel]::Optimal, $false)"
