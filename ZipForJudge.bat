@@ -1,6 +1,6 @@
 @echo off
 REM This program navigates to the specified directory and archives all files/folders
-REM Exception are "bin" and "obj" folders, as well as ".txt", hidden files and folders
+REM Exception are "bin" and "obj" folders, as well as "Migrations" folder, hidden files and/or folders
 REM Archive is created at the source location
 
 REM Prompt User for Source Directory
