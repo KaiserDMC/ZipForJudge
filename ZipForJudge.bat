@@ -39,7 +39,7 @@ echo .zip>> "%tempdir%\exclude.txt"
 echo Migrations\>> "%tempdir%\exclude.txt"
 
 REM Copy Files From Source Directory to Temp Directory
-xcopy "%sourcedir%" "%tempdir_copy%" /EXCLUDE:%tempdir%\exclude.txt /Y /E 
+xcopy "%sourcedir%" "%tempdir_copy%" /EXCLUDE:%tempdir%\exclude.txt /Y /E /Q
 
 REM If Older Archive Exists -> Delete 
 if exist "%destpath%\%archivename%.zip" (
