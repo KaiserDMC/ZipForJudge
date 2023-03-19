@@ -38,6 +38,8 @@ echo .vs\>> "%tempdir%\exclude.txt"
 echo .zip>> "%tempdir%\exclude.txt"
 echo Migrations\>> "%tempdir%\exclude.txt"
 echo Datasets\>> "%tempdir%\exclude.txt"
+echo ExportResults\>> "%tempdir%\exclude.txt"
+echo ImportResults\>> "%tempdir%\exclude.txt"
 
 REM Copy Files From Source Directory to Temp Directory
 xcopy "%sourcedir%" "%tempdir_copy%" /EXCLUDE:%tempdir%\exclude.txt /Y /E /Q
